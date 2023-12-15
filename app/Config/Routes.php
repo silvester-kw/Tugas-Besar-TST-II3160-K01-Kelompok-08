@@ -18,3 +18,8 @@ $routes->get('/reservation/asal-kota-tersedikit', 'APIController::asal_kota_ters
 $routes->get('/reserved', 'ReservasiController::history');
 $routes->get('/reserve', 'ReservasiController::reserve');
 $routes->post('/create-reservation', 'ReservasiController::create_reservation');
+
+//Login
+$routes->get('/login', 'AuthAPIController::login_view');
+$routes->get('/logout', 'LoginController::logout');
+$routes->match(['get','post'], 'AuthAPIController/login_action', 'AuthAPIController::login_action');
