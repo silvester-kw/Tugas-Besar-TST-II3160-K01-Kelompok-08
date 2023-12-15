@@ -38,8 +38,8 @@
                         <input required type="text" name="nama_pengunjung" id="nama_pengunjung" class="mt-1 p-2 border border-gray-300 rounded-md w-full focus:outline-none focus:border-blue-500"/>
                     </div>
                     <div class="mb-3">
-                        <label for="kota_asal_pengunjung">Asal Kota</label>
-                        <input required type="text" name="kota_asal_pengunjung" id="kota_asal_pengunjung" class="mt-1 p-2 border border-gray-300 rounded-md w-full focus:outline-none focus:border-blue-500"/>
+                        <label for="asal_kota_pengunjung">Asal Kota</label>
+                        <input required type="text" name="asal_kota_pengunjung" id="asal_kota_pengunjung" class="mt-1 p-2 border border-gray-300 rounded-md w-full focus:outline-none focus:border-blue-500"/>
                     </div>
                 </div>
                 <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline-blue">Reserve</button>

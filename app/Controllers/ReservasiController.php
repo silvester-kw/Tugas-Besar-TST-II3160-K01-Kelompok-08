@@ -4,7 +4,10 @@ namespace App\Controllers;
 
 class ReservasiController extends BaseController
 {
-    public function index()
+    protected $modelName = 'App\Models\ReservasiModel';
+    protected $format = 'json';
+
+    public function list()
     {
         $data = [
             'title' => 'Daftar Reservasi',
@@ -43,5 +46,25 @@ class ReservasiController extends BaseController
             session()->setFlashdata('failed', 'Reservasi gagal');
             return redirect()->back()->withInput();
         }
+
+        // jika valid
+        $this->ReservasiModel->insert([
+            'nama_wahana' => $this->request->getPost('nama_wahana'),
+            'email_pengunjung' => $this->request->getPost('email_pengunjung'),
+            'nama_pengunjung' => $this->request->getPost('nama_pengunjung'),
+            'asal_kota_pengunjung' => $this->request->getPost('asal_kota_pengunjung'),
+        ]);
+        return redirect()->to(base_url('reserve'))->with('success', 'Reservasi berhasil');
     }
+
+    // API
+    public function index()
+    {
+        $data = [
+            'message' => 'success',
+            'data_pegawai' => $this->ReservasiModel->findAll()
+        ];
+        return $this->respond($data, 200);
+    }
+
 }
