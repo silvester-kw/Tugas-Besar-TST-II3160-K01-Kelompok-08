@@ -29,9 +29,12 @@
                         </select>
                     </div>
                     <div class="mb-3">
-                        <label for="email_pengunjung">Email</label>
-                        <input required type="text" name="email_pengunjung" id="email_pengunjung" 
-                        class="<?= $validation->hasError('email_pengunjung') ? 'is-invalid' : null ?> mt-1 p-2 border border-gray-300 rounded-md w-full focus:outline-none focus:border-blue-500"/>
+                        <label for="jenis_tiket">Tipe Tiket</label>
+                        <select required name="jenis_tiket" id="jenis_tiket" class="mt-1 p-2 border border-gray-300 rounded-md w-full focus:outline-none focus:border-blue-500">
+                            <option value="">-- pilih tiket --</option>
+                            <option value="Reguler">Reguler</option>
+                            <option value="VIP">VIP</option>
+                        </select>
                     </div>
                     <div class="mb-3">
                         <label for="nama_pengunjung">Nama</label>

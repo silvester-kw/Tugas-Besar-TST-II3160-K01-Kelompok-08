@@ -15,6 +15,8 @@
                     <a href="/about">About</a>
                     <p>|</p> 
                     <a href="/reserved">Reserved</a> 
+                    <p>|</p> 
+                    <a href="/logout">Logout</a> 
                 </div>
             </div>
         </div>    

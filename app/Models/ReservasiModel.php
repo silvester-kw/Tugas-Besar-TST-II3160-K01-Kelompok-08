@@ -10,7 +10,7 @@ class ReservasiModel extends Model
     protected $primaryKey       = 'id_reservasi';
     protected $useAutoIncrement = true;
     protected $returnType       = 'object';
-    protected $allowedFields    = ['nama_wahana', 'email_pengunjung', 'nama_pengunjung', 'asal_kota_pengunjung'];
+    protected $allowedFields    = ['id_user', 'nama_wahana', 'jenis_tiket', 'nama_pengunjung', 'asal_kota_pengunjung'];
 
     // Dates
     protected $useTimestamps = true;

@@ -7,7 +7,7 @@
     <body class="bg-blue-400">
         <div class="w-screen h-screen">
             <div class="flex justify-center">
-                <div class="container w-max h-max mt-36 mx-8 px-10 py-16 md:p-16 rounded-3xl bg-gray-50">
+                <div class="container w-max h-max mt-36 mx-8 px-10 py-16 md:p-16 rounded-3xl bg-gray-50 min-w-">
                     <div class="col-5">
                         <h1 class="px-64 font-title font-bold text-xl md:text-3xl text-center mb-16 text-black"><span class="w-md"></span>Traveloka<span class="text-gray-50"></span></h1>
                         <?php if (session()->getFlashdata('msg')) : ?>

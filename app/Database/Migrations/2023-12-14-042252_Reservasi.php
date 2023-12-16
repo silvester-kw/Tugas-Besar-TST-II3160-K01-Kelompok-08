@@ -15,11 +15,15 @@ class Reservasi extends Migration
                 'unsigned'      => true,
                 'auto_increment'=> true,
             ],
-            'nama_wahana'   => [
+            'id_user' => [
+                'type' => 'INT',
+                'unsigned'       => true,
+            ], 
+            'jenis_tiket'   => [
                 'type'          =>'VARCHAR',
                 'constraint'    => 75,
             ],
-            'email_pengunjung'   => [
+            'nama_wahana'   => [
                 'type'          =>'VARCHAR',
                 'constraint'    => 75,
             ],
@@ -39,7 +43,6 @@ class Reservasi extends Migration
                 'type'          =>'DATETIME',
                 //'null'          => true,
             ],
-
         ]);
         $this->forge->addKey('id_reservasi', true);
         $this->forge->createTable('reservasi');

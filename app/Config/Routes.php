@@ -10,9 +10,9 @@ $routes->get('/about', 'About::index');
 $routes->get('/blog', 'Blog::index');
 
 //API
-$routes->get('/reservation', 'APIController::index');
-$routes->get('/reservation/asal-kota-terbanyak', 'APIController::asal_kota_terbanyak');
-$routes->get('/reservation/asal-kota-tersedikit', 'APIController::asal_kota_tersedikit');
+$routes->get('/api', 'APIController::index');
+$routes->get('/api/asal-kota-terbanyak', 'APIController::asal_kota_terbanyak');
+$routes->get('/api/asal-kota-tersedikit', 'APIController::asal_kota_tersedikit');
 
 //route reservation controller
 $routes->get('/reserved', 'ReservasiController::history');

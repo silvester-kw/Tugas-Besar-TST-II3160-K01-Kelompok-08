@@ -11,6 +11,7 @@ use Psr\Log\LoggerInterface;
 
 // use model
 use App\Models\ReservasiModel;
+use App\Models\TransactionModel;
 /**
  * Class BaseController
  *

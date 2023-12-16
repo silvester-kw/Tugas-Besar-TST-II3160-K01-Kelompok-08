@@ -26,7 +26,7 @@ class APIController extends ResourceController
     {
         $data = [
             'message' => 'success',
-            'data_reservasi' => $this->model->select('asal_kota_pengunjung, COUNT(*) as total')
+            'data_kota_terbanyak' => $this->model->select('asal_kota_pengunjung, COUNT(*) as total')
             ->groupBy('asal_kota_pengunjung')
             ->orderBy('total', 'DESC') // Menyusun hasil berdasarkan count secara menurun (DESC)
             ->limit(5) // Mengembalikan hanya 5 baris pertama
@@ -39,7 +39,7 @@ class APIController extends ResourceController
     {
         $data = [
             'message' => 'success',
-            'data_reservasi' => $this->model->select('asal_kota_pengunjung, COUNT(*) as total')
+            'data_kota_tersedikit' => $this->model->select('asal_kota_pengunjung, COUNT(*) as total')
             ->groupBy('asal_kota_pengunjung')
             ->orderBy('total', 'ASC') // Menyusun hasil berdasarkan count secara menurun (DESC)
             ->limit(5) // Mengembalikan hanya 5 baris pertama
