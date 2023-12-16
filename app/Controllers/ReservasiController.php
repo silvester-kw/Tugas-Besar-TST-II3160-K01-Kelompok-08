@@ -67,6 +67,11 @@ class ReservasiController extends BaseController
         return view('menu').view('reserve_form', $data);
     }
 
+    public function delete_reservation()
+    {
+        
+    }
+
     public function create_reservation()
     {
         $isLoggedIn = session('isLoggedIn');
