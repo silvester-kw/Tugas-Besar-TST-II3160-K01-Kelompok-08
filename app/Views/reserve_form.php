@@ -24,8 +24,11 @@
                         <label for="nama_wahana">Wahana</label>
                         <select required name="nama_wahana" id="nama_wahana" class="mt-1 p-2 border border-gray-300 rounded-md w-full focus:outline-none focus:border-blue-500">
                             <option value="">-- pilih wahana --</option>
+                            <option value="Rolerkoster">Rolerkoster</option>
                             <option value="Bianglala">Bianglala</option>
+                            <option value="Rumah Hantu">Rumah Hantu</option>
                             <option value="Kora-kora">Kora-kora</option>
+                            <option value="Komedi Putar">Komedi Putar</option>
                         </select>
                     </div>
                     <div class="mb-3">

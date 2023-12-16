@@ -3,6 +3,8 @@
 namespace App\Controllers;
 
 use CodeIgniter\RESTful\ResourceController;
+use CodeIgniter\HTTP\ResponseInterface;
+use App\Models\User;
 
 class APIController extends ResourceController
 {
@@ -24,6 +26,17 @@ class APIController extends ResourceController
 
     public function asal_kota_terbanyak()
     {
+        $email = $this->request->getVar('email');
+        $password = $this->request->getVar('password');
+
+        if (!model(User::class)->validatePassword($email, $password)) {
+            $response = [
+                'status' => 'error',
+                'message' => 'Credential salah!'
+            ];
+            return $this->respond($response, 403);
+        }
+
         $data = [
             'message' => 'success',
             'data_kota_terbanyak' => $this->model->select('asal_kota_pengunjung, COUNT(*) as total')
@@ -37,6 +50,17 @@ class APIController extends ResourceController
     
     public function asal_kota_tersedikit()
     {
+        $email = $this->request->getVar('email');
+        $password = $this->request->getVar('password');
+
+        if (!model(User::class)->validatePassword($email, $password)) {
+            $response = [
+                'status' => 'error',
+                'message' => 'Credential salah!'
+            ];
+            return $this->respond($response, 403);
+        }
+        
         $data = [
             'message' => 'success',
             'data_kota_tersedikit' => $this->model->select('asal_kota_pengunjung, COUNT(*) as total')

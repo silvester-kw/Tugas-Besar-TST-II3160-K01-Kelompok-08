@@ -16,6 +16,7 @@ $routes->get('/api/asal-kota-tersedikit', 'APIController::asal_kota_tersedikit')
 
 //route reservation controller
 $routes->get('/reserved', 'ReservasiController::history');
+$routes->get('/admin', 'ReservasiController::all_reservation');
 $routes->get('/reserve', 'ReservasiController::reserve');
 $routes->post('/create-reservation', 'ReservasiController::create_reservation');
 

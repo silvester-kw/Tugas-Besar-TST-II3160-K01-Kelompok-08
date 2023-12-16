@@ -17,7 +17,6 @@
                         <th scope="col" class="px-6 py-3">Nama</th>
                         <th scope="col" class="px-6 py-3">Kota Asal</th>
                         <th scope="col" class="px-6 py-3">Tanggal Reservasi</th>
-                        <th scope="col" class="px-6 py-3">Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -31,9 +30,6 @@
                             <td class="px-6 py-4"><?= $reservasi->nama_pengunjung; ?></td>
                             <td class="px-6 py-4"><?= $reservasi->asal_kota_pengunjung; ?></td>
                             <td class="px-6 py-4"><?= $reservasi->tanggal_reservasi; ?></td>
-                            <td class="px-6 py-4">
-                                <a href="#" class="font-medium bg-red-600 rounded-md text-white py-2 px-3  hover:bg--red-800 ">Delete</a>
-                            </td>
                         </tr>
                     <?php endforeach; ?>
                 <?php else : ?>
