@@ -198,17 +198,6 @@ class ReservasiSeeder extends Seeder
                'tanggal_reservasi' => '2023-12-25 13:00:00',
                'tanggal_ubah' => '2023-12-25 13:00:00',
             ],
-            [
-               'id_user' => '5',
-               'jenis_tiket' => 'Reguler', 
-               'nama_wahana' => 'Kora-Kora',
-               'nama_pengunjung' => 'Nono',
-               'asal_kota_pengunjung' => 'Medan',
-               'tanggal_reservasi' => '2023-12-25 13:00:00',
-               'tanggal_ubah' => '2023-12-25 13:00:00',
-            ],
-
-
         ];
 
         foreach ($data as $data_reservasi) {
