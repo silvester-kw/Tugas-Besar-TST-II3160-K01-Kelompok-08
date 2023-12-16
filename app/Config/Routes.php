@@ -5,7 +5,6 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Home::index');
 $routes->get('/about', 'About::index');
 $routes->get('/blog', 'Blog::index');
 
@@ -13,7 +12,6 @@ $routes->get('/blog', 'Blog::index');
 $routes->get('/api', 'APIController::index');
 $routes->get('/api/asal-kota-terbanyak', 'APIController::asal_kota_terbanyak');
 $routes->get('/api/asal-kota-tersedikit', 'APIController::asal_kota_tersedikit');
-
 //route reservation controller
 $routes->get('/reserved', 'ReservasiController::history');
 $routes->get('/admin', 'ReservasiController::all_reservation');
@@ -26,4 +24,4 @@ $routes->get('/logout', 'LoginController::logout');
 $routes->match(['get','post'], 'AuthAPIController/login_action', 'AuthAPIController::login_action');
 
 //API dari wahana
-$routes->get('/wahana-api', 'WahanaAPIController::wahana_api');
+$routes->get('/', 'WahanaAPIController::wahana_api');
