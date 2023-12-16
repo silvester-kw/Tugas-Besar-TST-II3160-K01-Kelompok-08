@@ -1,0 +1,218 @@
+<?php
+
+namespace App\Database\Seeds;
+
+use CodeIgniter\Database\Seeder;
+
+class ReservasiSeeder extends Seeder
+{
+    public function run()
+    {
+        $data = [
+            [
+               'id_user' => '1',
+               'jenis_tiket' => 'VIP', 
+               'nama_wahana' => 'Bianglala',
+               'nama_pengunjung' => 'Silvester',
+               'asal_kota_pengunjung' => 'Cimahi',
+               'tanggal_reservasi' => '2023-12-25 13:00:00',
+               'tanggal_ubah' => '2023-12-25 13:00:00',
+            ],
+            [
+               'id_user' => '1',
+               'jenis_tiket' => 'Reguler', 
+               'nama_wahana' => 'Bianglala',
+               'nama_pengunjung' => 'Silvester',
+               'asal_kota_pengunjung' => 'Cimahi',
+               'tanggal_reservasi' => '2023-12-25 13:00:00',
+               'tanggal_ubah' => '2023-12-25 13:00:00',
+            ],
+            [
+               'id_user' => '1',
+               'jenis_tiket' => 'Reguler', 
+               'nama_wahana' => 'Bianglala',
+               'nama_pengunjung' => 'Silvester',
+               'asal_kota_pengunjung' => 'Cimahi',
+               'tanggal_reservasi' => '2023-12-25 13:00:00',
+               'tanggal_ubah' => '2023-12-25 13:00:00',
+            ],
+            [
+               'id_user' => '1',
+               'jenis_tiket' => 'VIP', 
+               'nama_wahana' => 'Bianglala',
+               'nama_pengunjung' => 'Silvester',
+               'asal_kota_pengunjung' => 'Cimahi',
+               'tanggal_reservasi' => '2023-12-25 13:00:00',
+               'tanggal_ubah' => '2023-12-25 13:00:00',
+            ],
+            [
+               'id_user' => '1',
+               'jenis_tiket' => 'VIP', 
+               'nama_wahana' => 'Bianglala',
+               'nama_pengunjung' => 'Silvester',
+               'asal_kota_pengunjung' => 'Cimahi',
+               'tanggal_reservasi' => '2023-12-25 13:00:00',
+               'tanggal_ubah' => '2023-12-25 13:00:00',
+            ],
+            [
+               'id_user' => '1',
+               'jenis_tiket' => 'VIP', 
+               'nama_wahana' => 'Bianglala',
+               'nama_pengunjung' => 'Silvester',
+               'asal_kota_pengunjung' => 'Cimahi',
+               'tanggal_reservasi' => '2023-12-25 13:00:00',
+               'tanggal_ubah' => '2023-12-25 13:00:00',
+            ],
+            [
+               'id_user' => '1',
+               'jenis_tiket' => 'Reguler', 
+               'nama_wahana' => 'Bianglala',
+               'nama_pengunjung' => 'Silvester',
+               'asal_kota_pengunjung' => 'Cimahi',
+               'tanggal_reservasi' => '2023-12-25 13:00:00',
+               'tanggal_ubah' => '2023-12-25 13:00:00',
+            ],
+            [
+               'id_user' => '2',
+               'jenis_tiket' => 'VIP', 
+               'nama_wahana' => 'Rolerkoster',
+               'nama_pengunjung' => 'Angie',
+               'asal_kota_pengunjung' => 'Bandung',
+               'tanggal_reservasi' => '2023-12-25 13:00:00',
+               'tanggal_ubah' => '2023-12-25 13:00:00',
+            ],
+            [
+               'id_user' => '2',
+               'jenis_tiket' => 'Reguler', 
+               'nama_wahana' => 'Rolerkoster',
+               'nama_pengunjung' => 'Angie',
+               'asal_kota_pengunjung' => 'Bandung',
+               'tanggal_reservasi' => '2023-12-25 13:00:00',
+               'tanggal_ubah' => '2023-12-25 13:00:00',
+            ],
+            [
+               'id_user' => '2',
+               'jenis_tiket' => 'Reguler', 
+               'nama_wahana' => 'Rolerkoster',
+               'nama_pengunjung' => 'Angie',
+               'asal_kota_pengunjung' => 'Bandung',
+               'tanggal_reservasi' => '2023-12-25 13:00:00',
+               'tanggal_ubah' => '2023-12-25 13:00:00',
+            ],
+            [
+               'id_user' => '2',
+               'jenis_tiket' => 'Reguler', 
+               'nama_wahana' => 'Rolerkoster',
+               'nama_pengunjung' => 'Angie',
+               'asal_kota_pengunjung' => 'Bandung',
+               'tanggal_reservasi' => '2023-12-25 13:00:00',
+               'tanggal_ubah' => '2023-12-25 13:00:00',
+            ],
+            [
+               'id_user' => '2',
+               'jenis_tiket' => 'VIP', 
+               'nama_wahana' => 'Rolerkoster',
+               'nama_pengunjung' => 'Angie',
+               'asal_kota_pengunjung' => 'Bandung',
+               'tanggal_reservasi' => '2023-12-25 13:00:00',
+               'tanggal_ubah' => '2023-12-25 13:00:00',
+            ],
+            [
+               'id_user' => '3',
+               'jenis_tiket' => 'Reguler', 
+               'nama_wahana' => 'Rumah Hantu',
+               'nama_pengunjung' => 'Caris',
+               'asal_kota_pengunjung' => 'Bekasi',
+               'tanggal_reservasi' => '2023-12-25 13:00:00',
+               'tanggal_ubah' => '2023-12-25 13:00:00',
+            ],
+            [
+               'id_user' => '3',
+               'jenis_tiket' => 'VIP', 
+               'nama_wahana' => 'Rumah Hantu',
+               'nama_pengunjung' => 'Caris',
+               'asal_kota_pengunjung' => 'Bekasi',
+               'tanggal_reservasi' => '2023-12-25 13:00:00',
+               'tanggal_ubah' => '2023-12-25 13:00:00',
+            ],
+            [
+               'id_user' => '3',
+               'jenis_tiket' => 'VIP', 
+               'nama_wahana' => 'Rumah Hantu',
+               'nama_pengunjung' => 'Caris',
+               'asal_kota_pengunjung' => 'Bekasi',
+               'tanggal_reservasi' => '2023-12-25 13:00:00',
+               'tanggal_ubah' => '2023-12-25 13:00:00',
+            ],
+            [
+               'id_user' => '3',
+               'jenis_tiket' => 'VIP', 
+               'nama_wahana' => 'Rumah Hantu',
+               'nama_pengunjung' => 'Caris',
+               'asal_kota_pengunjung' => 'Bekasi',
+               'tanggal_reservasi' => '2023-12-25 13:00:00',
+               'tanggal_ubah' => '2023-12-25 13:00:00',
+            ],
+            [
+               'id_user' => '3',
+               'jenis_tiket' => 'Reguler', 
+               'nama_wahana' => 'Rumah Hantu',
+               'nama_pengunjung' => 'Caris',
+               'asal_kota_pengunjung' => 'Bekasi',
+               'tanggal_reservasi' => '2023-12-25 13:00:00',
+               'tanggal_ubah' => '2023-12-25 13:00:00',
+            ],
+            [
+               'id_user' => '3',
+               'jenis_tiket' => 'Reguler', 
+               'nama_wahana' => 'Rumah Hantu',
+               'nama_pengunjung' => 'Caris',
+               'asal_kota_pengunjung' => 'Bekasi',
+               'tanggal_reservasi' => '2023-12-25 13:00:00',
+               'tanggal_ubah' => '2023-12-25 13:00:00',
+            ],
+            [
+               'id_user' => '4',
+               'jenis_tiket' => 'Reguler', 
+               'nama_wahana' => 'Kora-Kora',
+               'nama_pengunjung' => 'Lala',
+               'asal_kota_pengunjung' => 'Bogor',
+               'tanggal_reservasi' => '2023-12-25 13:00:00',
+               'tanggal_ubah' => '2023-12-25 13:00:00',
+            ],
+            [
+               'id_user' => '4',
+               'jenis_tiket' => 'VIP', 
+               'nama_wahana' => 'Kora-Kora',
+               'nama_pengunjung' => 'Lala',
+               'asal_kota_pengunjung' => 'Bogor',
+               'tanggal_reservasi' => '2023-12-25 13:00:00',
+               'tanggal_ubah' => '2023-12-25 13:00:00',
+            ],
+            [
+               'id_user' => '5',
+               'jenis_tiket' => 'VIP', 
+               'nama_wahana' => 'Kora-Kora',
+               'nama_pengunjung' => 'Nana',
+               'asal_kota_pengunjung' => 'Klaten',
+               'tanggal_reservasi' => '2023-12-25 13:00:00',
+               'tanggal_ubah' => '2023-12-25 13:00:00',
+            ],
+            [
+               'id_user' => '5',
+               'jenis_tiket' => 'Reguler', 
+               'nama_wahana' => 'Kora-Kora',
+               'nama_pengunjung' => 'Nono',
+               'asal_kota_pengunjung' => 'Medan',
+               'tanggal_reservasi' => '2023-12-25 13:00:00',
+               'tanggal_ubah' => '2023-12-25 13:00:00',
+            ],
+
+
+        ];
+
+        foreach ($data as $data_reservasi) {
+            $this->db->table('reservasi')->insert($data_reservasi);
+        }
+    }
+}
