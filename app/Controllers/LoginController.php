@@ -3,6 +3,10 @@ namespace App\Controllers;
 use App\Models\Login;
 class LoginController extends BaseController{
     public function index(){
+        if ($isLoggedIn) {
+            return redirect()->to(base_url(''));
+        }
+
         return view('login');
     }
     public function login_action(){

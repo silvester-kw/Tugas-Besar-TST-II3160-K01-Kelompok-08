@@ -4,7 +4,8 @@
         <link rel="stylesheet" href="<?= base_url() ?>css/styles.css?v=1.0">
     </head>
     <body>
-        <div class="text-3xl font-bold py-4 px-4 text-blue-400">
+    <div class="px-8 md:px-16 lg:px-64">
+        <div class="text-center text-3xl font-bold py-4 px-4 text-blue-600">
             Your Reservation History
         </div>
         <div class="container relative overflow-x-auto shadow-md sm:rounded-lg">
@@ -17,7 +18,7 @@
                         <th scope="col" class="px-6 py-3">Nama</th>
                         <th scope="col" class="px-6 py-3">Kota Asal</th>
                         <th scope="col" class="px-6 py-3">Tanggal Reservasi</th>
-                        <th scope="col" class="px-6 py-3">Action</th>
+                        <!-- <th scope="col" class="px-6 py-3">Action</th> -->
                     </tr>
                 </thead>
                 <tbody>
@@ -31,9 +32,9 @@
                             <td class="px-6 py-4"><?= $reservasi->nama_pengunjung; ?></td>
                             <td class="px-6 py-4"><?= $reservasi->asal_kota_pengunjung; ?></td>
                             <td class="px-6 py-4"><?= $reservasi->tanggal_reservasi; ?></td>
-                            <td class="px-6 py-4">
+                            <!-- <td class="px-6 py-4">
                                 <a href="#" class="font-medium bg-red-600 rounded-md text-white py-2 px-3  hover:bg--red-800 ">Delete</a>
-                            </td>
+                            </td> -->
                         </tr>
                     <?php endforeach; ?>
                 <?php else : ?>
@@ -44,6 +45,7 @@
             </tbody>
         </table>
     </div>
+</div>
 </body>
 </html>
 

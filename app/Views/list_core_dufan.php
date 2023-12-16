@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="<?= base_url() ?>css/styles.css?v=1.0">
     </head>
     <body>
+    <div class="px-8 md:px-16 lg:px-64">
         <div class="text-3xl font-bold py-4 px-4 text-blue-400">
             Dufan's Core
         </div>
@@ -37,6 +38,7 @@
 
         <a href="/reserve" class="rounded-md px-4 py-2 bg-blue-400 font-medium text-white">Make Reservation</a>
     </div>
+</div>
 </body>
 </html>
 

@@ -4,6 +4,10 @@
         <link rel="stylesheet" href="<?= base_url() ?>css/styles.css?v=1.0">
     </head>
     <body>
+    <div class="px-8 md:px-16 lg:px-64">
+        <div class="text-center text-3xl font-bold py-4 px-4 text-blue-600">
+            Make Reservation
+        </div>
         <div>
             <?php if (session('success')) : ?>
                 <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-4" role="alert">
@@ -27,7 +31,7 @@
                             <option value="Rolerkoster">Rolerkoster</option>
                             <option value="Bianglala">Bianglala</option>
                             <option value="Rumah Hantu">Rumah Hantu</option>
-                            <option value="Kora-kora">Kora-kora</option>
+                            <option value="Kora-kora">Kora-Kora</option>
                             <option value="Komedi Putar">Komedi Putar</option>
                         </select>
                     </div>
@@ -48,8 +52,9 @@
                         <input required type="text" name="asal_kota_pengunjung" id="asal_kota_pengunjung" class="mt-1 p-2 border border-gray-300 rounded-md w-full focus:outline-none focus:border-blue-500"/>
                     </div>
                 </div>
-                <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline-blue">Reserve</button>
+                <button class="bg-yellow-400 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue">Reserve</button>
             </form>
         </div>
+    </div>
     </body>
 </html>
