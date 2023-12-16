@@ -12,9 +12,11 @@
                 <div class=" flex space-x-2 pr-4 font-medium">
                     <a href="/">Home</a>
                     <p>|</p> 
-                    <a href="/about">About</a>
+                    <a href="/reserve">Reserve</a>
                     <p>|</p> 
-                    <a href="/reserved">Reserved</a> 
+                    <a href="/reserved">Reservation History</a> 
+                    <p>|</p> 
+                    <a href="/admin">Admin</a> 
                     <p>|</p> 
                     <a href="/logout">Logout</a> 
                 </div>

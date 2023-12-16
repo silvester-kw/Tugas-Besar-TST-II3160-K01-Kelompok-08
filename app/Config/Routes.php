@@ -16,6 +16,7 @@ $routes->get('/api/asal-kota-tersedikit', 'APIController::asal_kota_tersedikit')
 
 //route reservation controller
 $routes->get('/reserved', 'ReservasiController::history');
+$routes->get('/admin', 'ReservasiController::all_reservation');
 $routes->get('/reserve', 'ReservasiController::reserve');
 $routes->post('/create-reservation', 'ReservasiController::create_reservation');
 
@@ -23,3 +24,6 @@ $routes->post('/create-reservation', 'ReservasiController::create_reservation');
 $routes->get('/login', 'AuthAPIController::login_view');
 $routes->get('/logout', 'LoginController::logout');
 $routes->match(['get','post'], 'AuthAPIController/login_action', 'AuthAPIController::login_action');
+
+//API dari wahana
+$routes->get('/wahana-api', 'WahanaAPIController::wahana_api');

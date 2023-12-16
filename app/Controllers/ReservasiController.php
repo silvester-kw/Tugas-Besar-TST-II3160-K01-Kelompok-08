@@ -16,6 +16,22 @@ class ReservasiController extends BaseController
         $this->User = new \App\Models\User();
     }
 
+    public function all_reservation() {
+        $isLoggedIn = session('isLoggedIn');
+
+        if ($isLoggedIn) {
+            $id_user = session('id');
+            $email = session('email');
+        } else {
+            return redirect()->to(base_url('login'));
+        }
+        $data = [
+            'title' => 'Daftar Reservasi',
+            'daftar_reservasi' => $this->ReservasiModel->orderBy('id_reservasi', 'DESC')->findAll(),
+        ];
+        return view('menu').view('admin', $data);
+    }
+
     public function history()
     {
         $isLoggedIn = session('isLoggedIn');
@@ -49,6 +65,11 @@ class ReservasiController extends BaseController
             'validation' => \Config\Services::validation()
         ];
         return view('menu').view('reserve_form', $data);
+    }
+
+    public function delete_reservation()
+    {
+        
     }
 
     public function create_reservation()

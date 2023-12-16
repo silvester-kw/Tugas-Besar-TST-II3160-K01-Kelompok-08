@@ -28,5 +28,11 @@ class User extends Model
             'password' => $password,
         ]);
     }
-    
+    public function getUserByEmail(string $email) {
+        return $this->where('email', $email)->first();
+    }
+
+    public function validatePassword(string $email, string $password) {
+        return $this->getUserByEmail($email)['password'] == md5($password);
+    }
 }
