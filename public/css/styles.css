@@ -606,6 +606,11 @@ video {
   margin-right: 4rem;
 }
 
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .mb-16 {
   margin-bottom: 4rem;
 }
@@ -684,6 +689,10 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -702,6 +711,10 @@ video {
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -885,6 +898,11 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .pr-4 {
   padding-right: 1rem;
 }
@@ -1028,6 +1046,19 @@ video {
 .hover\:bg-yellow-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(202 138 4 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:font-semibold:hover {
+  font-weight: 600;
+}
+
+.hover\:font-bold:hover {
+  font-weight: 700;
 }
 
 .hover\:underline:hover {
