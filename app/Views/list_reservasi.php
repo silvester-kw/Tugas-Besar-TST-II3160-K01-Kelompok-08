@@ -32,7 +32,7 @@
                             <td class="px-6 py-4"><?= $reservasi->asal_kota_pengunjung; ?></td>
                             <td class="px-6 py-4"><?= $reservasi->tanggal_reservasi; ?></td>
                             <td class="px-6 py-4">
-                                <a href="#" class="font-medium bg-red-600  hover:bg--red-800 ">Delete</a>
+                                <a href="#" class="font-medium bg-red-600 px-3 py-2 rounded-md text-white hover:bg--red-800 ">Delete</a>
                             </td>
                         </tr>
                     <?php endforeach; ?>
