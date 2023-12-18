@@ -21,7 +21,7 @@ compser install
 
 ### 3. Run Xampp
 
-### 4. In Xampp, start Apache and MySQL
+### 4. Inside Xampp, start Apache and MySQL
 
 ### 5. Go to https://localhost/phpmyadmin/
 
