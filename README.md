@@ -1,9 +1,14 @@
 # Sistem Takutku.com
 
+## Penjelasan sistem
+
+Sistem Reservasi Takut.com merupakan sistem pemesanan tiket online yang dapat diakses oleh para admin staff Takut.com sesuai dengan username dan password yang tersedia. Sistem ini menawarkan fitur pemesanan tiket untuk wahana Dududu world dan akan mencatat setiap data reservasi dan data pengunjung untuk disimpan dalam bentuk **chart domisili pengunjung terbanya**. Sistem ini juga akan menyediakan tampilan chart **Chart Wahana Terfavorit** untuk memberikan rekomendasi kepada pengunjung wahana apa yang paling menarik untuk dimainkan.
+
 ## Prerequisites
 
 - PHP
 - Composer
+- XAMPP
 
 ## How to Run it Locally
 
