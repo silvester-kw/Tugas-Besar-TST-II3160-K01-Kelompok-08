@@ -1,10 +1,7 @@
-# disini kita make image php versi 8.2 fpm
 FROM php:8.2-fpm
 
-# disini kita make folder var/www/
 WORKDIR /var/www
 
-# ini buat install package di linux
 RUN apt-get update && apt-get install -y \
     build-essential \
     curl \
@@ -31,7 +28,7 @@ RUN apt-get update && apt-get install -y \
 # Multibyte String
 RUN apt-get update && apt-get install -y libonig-dev && docker-php-ext-install mbstring
 
-# Miscellaneous / install package buat php
+# Miscellaneous
 RUN docker-php-ext-install bcmath
 RUN docker-php-ext-install exif
 RUN docker-php-ext-install pdo_mysql
@@ -50,4 +47,6 @@ RUN curl -O https://raw.githubusercontent.com/codeigniter4/CodeIgniter4/develop/
     chmod +x spark && \
     mv spark /usr/local/bin
 
+RUN sed -i 's/9000/9001/' /usr/local/etc/php-fpm.d/zz-docker.conf
 CMD bash -c "php-fpm"
+EXPOSE 9001
