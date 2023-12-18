@@ -1,5 +1,6 @@
 setup:
 	@make composer-setup
+	@make copy-env
 	@make build
 	@make run
 	@make database-migrate
@@ -15,10 +16,10 @@ copy-env:
 composer-setup:
 	composer install
 database-migrate:
-	echo "Starting database migration"
+	echo Starting database migration
 	docker exec -i wahanaku-database-1 bash -c "sleep 10"
 	docker exec wahanaku-app-1 bash -c "yes | php spark migrate:refresh"
-	echo "Finished database migration"
-	echo "Starting database seeding"
+	echo Finished database migration
+	echo Starting database seeding
 	docker exec wahanaku-app-1 bash -c "php spark db:seed AllSeeder"
-	echo "Finished database seeding"
+	echo Finished database seeding

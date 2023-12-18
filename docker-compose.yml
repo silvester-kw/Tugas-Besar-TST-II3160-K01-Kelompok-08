@@ -34,7 +34,7 @@ services:
     volumes:
       - ./docker/volumes/mysql:/var/lib/mysql
     environment:
-      MYSQL_DATABASE: wahanaku
+      MYSQL_DATABASE: traveloka_db_v2
       MYSQL_ALLOW_EMPTY_PASSWORD: true
       # MYSQL_USER: secret
       # MYSQL_PASSWORD: secret

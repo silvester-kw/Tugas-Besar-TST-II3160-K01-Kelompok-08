@@ -21,8 +21,8 @@ class WahanaAPIController extends BaseController
         } else {
             return redirect()->to(base_url('login'));
         }
-
-        $curl = curl_init('http://localhost:8080/api/analytics/?username=Lala&password=lala');
+        $url = getenv('API_URL') . 'api/analytics/?username=Lala&password=lala';
+        $curl = curl_init($url);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         $response = json_decode(curl_exec($curl), true);
         curl_close($curl);
