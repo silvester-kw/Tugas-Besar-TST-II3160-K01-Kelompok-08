@@ -2,6 +2,9 @@
 # Operating Specific Junk Files
 #-------------------------
 
+docker/volumes/mysql/mysql.sock
+
+
 # OS X
 .DS_Store
 .AppleDouble

@@ -11,6 +11,7 @@
             </div>
             <h2 class="text-xl font-bold mb-2">Table Rating</h2>
             <div class="container relative overflow-x-auto shadow-md sm:rounded-lg">
+            <?php if (!empty($wahana)): ?>
                 <table class="w-full text-sm text-left rtl:text-right text-gray-300">
                     <thead class="text-xs text-gray-700 uppercase bg-gray-50">
                         <tr>
@@ -29,6 +30,10 @@
                         <?php endforeach; ?>
                     </tbody>
                 </table>
+                
+            <?php else : ?>
+                <div class="text-red-500">Data dari sistem wahana tidak terhubung, nyalakan sistem wahana</div>
+            <?php endif; ?>
             </div>
             <div class="my-8 flex flex-row gap-8">
             <div>
@@ -69,6 +74,8 @@
                                 }
                             }
                         });
+                    <?php else : ?>
+                        <div class="text-red-500">Data dari sistem wahana tidak terhubung, nyalakan sistem wahana</div>
                     <?php endif; ?>
                 </script>
             <div class="mt-8">        

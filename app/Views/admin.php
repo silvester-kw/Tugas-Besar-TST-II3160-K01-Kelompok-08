@@ -4,7 +4,6 @@
         <link rel="stylesheet" href="<?= base_url() ?>css/styles.css?v=1.0">
     </head>
     <body>
-
         <div class="px-8 md:px-16 lg:px-64">
             <div class="text-center text-3xl font-bold py-4 px-4 text-blue-600">
                 All Reservation

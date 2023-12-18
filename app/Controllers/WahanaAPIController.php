@@ -26,13 +26,15 @@ class WahanaAPIController extends BaseController
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         $response = json_decode(curl_exec($curl), true);
         curl_close($curl);
-        $data_wahana = $response['data']['Analytics'];
-        //dd($data_wahana);
-        $data['respon'] = $response['data']['Analytics'];
         
+        $data_wahana = $response;
+        if (!empty($response)) {
+            $data_wahana = $response['data']['Analytics'];
+        }
+        //dd($data_wahana);
         $data = [
             'title' => 'API Wahana',
-            'wahana' => $response['data']['Analytics'],
+            'wahana' => $data_wahana,
         ];
         //echo $response;
 
