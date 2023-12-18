@@ -10,43 +10,27 @@ Sistem Reservasi Takut.com merupakan sistem pemesanan tiket online yang dapat di
 - Composer
 - XAMPP
 
-## How to Run it Locally
+## Cara menjalankan sistem
 
-### 1. git clone to your local folder
-```bash
-git clone 
-```
+ 1. Clone repository berikut dengan link berikut ini
+    ```sh
+    git clone (https://github.com/victoria-angelique/Tugas-Besar-TST-II3160---K01--Kelompok-08.git)
+    ```
+2. Pastikan **xampp** atau **manager osx** sudah berjalan dan terlampir gambar seperti berikut
+   <img width="673" alt="Screenshot 2023-12-18 at 20 27 33" src="https://github.com/victoria-angelique/Tugas-Besar-TST-II3160---K01--Kelompok-08/assets/91114869/65be6ac8-9e93-4538-a8e1-1b4fc83ac20b">
 
-### 2. cd to cloned repo
+3. Buka link **php myadmin** http://localhost/phpmyadmin/ dengan web browser, kemudian buatlah database baru dengan nama **reservasi** dengan click new sehingga terbuat database seperti berikut
+   <img width="1105" alt="Screenshot 2023-12-18 at 20 32 26" src="https://github.com/victoria-angelique/Tugas-Besar-TST-II3160---K01--Kelompok-08/assets/91114869/58e43150-7483-482f-8d1f-019de510307f">
 
-### 3. Install composer
-```bash
-compser install
-```
-
-### 3. Run Xampp
-
-### 4. Inside Xampp, start Apache and MySQL
-
-### 5. Go to https://localhost/phpmyadmin/
-
-### 6. Make new database named "reservasi"
-
-### 7. Open the cloned repository
-
-### 8. Run migration
-```bash
-php spark migrate:refresh
-```
-
-### 9. Seed the database
-```bash
-php spark db:seed AllSeeder
-```
-
-### 10. Run the application
-```bash
-php spark serve
-```
-
-### Open http://localhost:8081/
+4. Selanjutnya, fetch data dengan command berikut untuk memasukkan data seeder ke dalam database di php my admin tadi
+   ```sh
+   php spark migrate:refresh
+   ```
+   ```sh
+   php spark db:seed AllSeeder
+   ```
+5. Jalankan command berikut untuk menjalankan sistem di link localhost kalian menggunakan link berikut (http://localhost:8081/)
+   ```sh
+   php spark serve
+   ```
+6. Selamat kalian berhasil masuk ke dalam sistem reservasi apabila di layar kalian sudah tertampil interface berikut 
