@@ -20,11 +20,11 @@ CPF := copy /y
 endif
 
 setup:
-	# @make composer-setup
+	@make composer-setup
 	@make copy-env
 	@make build
 	@make run
-	@make migrate
+	# @make migrate
 	@echo Setup successful, website running on localhost:8080
 build:
 	docker-compose build --no-cache --force-rm
