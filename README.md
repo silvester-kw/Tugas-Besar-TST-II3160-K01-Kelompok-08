@@ -17,10 +17,10 @@ Sistem Reservasi Takut.com merupakan sistem pemesanan tiket online yang dapat di
     git clone (https://github.com/silvester-kw/Tugas-Besar-TST-II3160-K01-Kelompok-08.git)
     ```
 2. Pastikan **xampp** atau **manager osx** sudah berjalan dan terlampir gambar seperti berikut
-   <img width="673" alt="Screenshot 2023-12-18 at 20 27 33" src="https://github.com/victoria-angelique/Tugas-Besar-TST-II3160---K01--Kelompok-08/assets/91114869/65be6ac8-9e93-4538-a8e1-1b4fc83ac20b">
+   ![image](https://github.com/silvester-kw/Tugas-Besar-TST-II3160-K01-Kelompok-08/assets/88710185/8f33560f-28c9-44e7-9362-e67bcfed55d8)
 
 3. Buka link **php myadmin** http://localhost/phpmyadmin/ dengan web browser, kemudian buatlah database baru dengan nama **reservasi** dengan click new sehingga terbuat database seperti berikut
-   <img width="1105" alt="Screenshot 2023-12-18 at 20 32 26" src="https://github.com/victoria-angelique/Tugas-Besar-TST-II3160---K01--Kelompok-08/assets/91114869/58e43150-7483-482f-8d1f-019de510307f">
+   ![image](https://github.com/silvester-kw/Tugas-Besar-TST-II3160-K01-Kelompok-08/assets/88710185/8d967d19-72bf-401f-b447-5cff4cc6a41d)
 
 4. Selanjutnya, fetch data dengan command berikut untuk memasukkan data seeder ke dalam database di php my admin tadi
    ```sh
