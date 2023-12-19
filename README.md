@@ -42,7 +42,7 @@ Sistem Reservasi Takut.com merupakan sistem pemesanan tiket online yang dapat di
 
  1. Clone repository berikut dengan link berikut ini
     ```sh
-    git clone (https://github.com/victoria-angelique/Tugas-Besar-TST-II3160---K01--Kelompok-08.git)
+    git clone (git clone (https://github.com/silvester-kw/Tugas-Besar-TST-II3160-K01-Kelompok-08.git)
     ```
 2. Buka command terminal anda dan tuliskan command berikut
    ```sh
@@ -56,5 +56,5 @@ Sistem Reservasi Takut.com merupakan sistem pemesanan tiket online yang dapat di
    ```sh
    make run
    ```
-6. Selamat, anda bisa menjalankan sistem kami di link (http://localhost:8080/) dan apabila kalian berhasil masuk ke dalam sistem wahana apabila di layar kalian sudah tertampil interface login
+6. Selamat, anda bisa menjalankan sistem kami di link (http://localhost:8081/) dan apabila kalian berhasil masuk ke dalam sistem wahana apabila di layar kalian sudah tertampil interface login
 ![image](https://github.com/silvester-kw/Tugas-Besar-TST-II3160-K01-Kelompok-08/assets/88710185/ecb881a7-749b-41ac-a6b6-b565c127c0b4)
