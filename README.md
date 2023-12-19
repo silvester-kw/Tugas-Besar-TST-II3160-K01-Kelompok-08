@@ -22,18 +22,21 @@ Sistem Reservasi Takut.com merupakan sistem pemesanan tiket online yang dapat di
 3. Buka link **php myadmin** http://localhost/phpmyadmin/ dengan web browser, kemudian buatlah database baru dengan nama **reservasi** dengan click new sehingga terbuat database seperti berikut
    ![image](https://github.com/silvester-kw/Tugas-Besar-TST-II3160-K01-Kelompok-08/assets/88710185/8d967d19-72bf-401f-b447-5cff4cc6a41d)
 
-4. Selanjutnya, fetch data dengan command berikut untuk memasukkan data seeder ke dalam database di php my admin tadi
+4. Cek .env untuk memastikan apakah env sedang terhubung untuk localhost atau Docker. Pastikan membaca petunjuk pada .env. Comment .env yang tidak diinginkan dan Uncomment yang dibutuhkan.
+5. Selanjutnya, fetch data dengan command berikut untuk memasukkan data seeder ke dalam database di php my admin tadi
    ```sh
    php spark migrate:refresh
    ```
    ```sh
    php spark db:seed AllSeeder
    ```
-5. Jalankan command berikut untuk menjalankan sistem di link localhost kalian menggunakan link berikut (http://localhost:8081/)
+7. Jalankan command berikut untuk menjalankan sistem di link localhost kalian menggunakan link berikut (http://localhost:8081/)
    ```sh
    php spark serve
    ```
-6. Selamat kalian berhasil masuk ke dalam sistem reservasi apabila di layar kalian sudah tertampil interface login 
+8. Selamat kalian berhasil masuk ke dalam sistem reservasi apabila di layar kalian sudah tertampil interface login
+   ![image](https://github.com/silvester-kw/Tugas-Besar-TST-II3160-K01-Kelompok-08/assets/88710185/f5339c1f-f0e4-4798-8c79-023b9c9342dc)
+
 
 ### Cara menjalankan sistem dengan deployment docker
 
@@ -54,3 +57,4 @@ Sistem Reservasi Takut.com merupakan sistem pemesanan tiket online yang dapat di
    make run
    ```
 6. Selamat, anda bisa menjalankan sistem kami di link (http://localhost:8080/) dan apabila kalian berhasil masuk ke dalam sistem wahana apabila di layar kalian sudah tertampil interface login
+![image](https://github.com/silvester-kw/Tugas-Besar-TST-II3160-K01-Kelompok-08/assets/88710185/ecb881a7-749b-41ac-a6b6-b565c127c0b4)
